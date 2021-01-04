@@ -1,6 +1,7 @@
 body{
-    font-size: 12px;
+    font-size: 14px;
 }
+/* Configurtion breaks at 601 px. Optimized for Iphone 8 */ 
 
 .container{
     display: grid;
@@ -22,6 +23,7 @@ body{
 }
 h1 {
     border: 2px solid red;
+    
     }
 
 .home{
@@ -30,12 +32,15 @@ h1 {
     }
 
 .title {
+    display:flex;
     border: 1px solid blue;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
     text-align: center;
+    justify-content: center;
+    font-size: 0.9em;
 }
 
 .sidebar {
