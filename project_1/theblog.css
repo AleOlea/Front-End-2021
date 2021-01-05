@@ -7,11 +7,13 @@ body{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 70px 120px 400px 50px;
-    /*grid-auto-rows: minmax(100px, auto);*/
+    /*grid-auto-rows: minmax(100px, auto);*//*Is it going to work Better?*/
     border: 2px solid red;
 }
 
-/* Nav bar, displays home left. Menu to the right?*/
+/* Nav bar, displays home left.Tittle center. Menu to the right?*/
+/* borders are meant to help me to localiza things and interactions
+ they will go aeay once al is ready*/
 
 .header {
     display: grid;
@@ -25,8 +27,7 @@ body{
 }
 h1 {
     border: 2px solid red;
-    
-    }
+     }
 
 .home {
     display: flex;
@@ -56,7 +57,7 @@ h1 {
 .sidebar {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 118px;
+    grid-template-rows: 120px;
     align-items: center;
     justify-items:center;
     border: 1px solid black;
@@ -94,7 +95,7 @@ h1 {
 }
 p { 
     margin: 10px;
-    border: 1px solid green;
+    border: 2px solid green;
     text-align: justify;
 
 }
