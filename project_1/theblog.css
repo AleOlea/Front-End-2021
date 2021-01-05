@@ -57,7 +57,6 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 118px;
-    text-align: center;
     align-items: center;
     justify-items:center;
     border: 1px solid black;
@@ -76,60 +75,65 @@ h1 {
     grid-row-start: 1;
     grid-row-end: 3;  
     border-radius: 60%;  
-    background-image: url("author_photo.png");
+    /*background-image: url("author_photo.png");*/
     background-size: cover;
     border: 3px solid black;
 
     }
 
 #box2 {
-    border: 1px solid pink;
+    margin: 10px;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3; 
     font-size: 0.9em;
+    text-align: center;
+    border: 1px solid pink;
+    
 }
+p { 
+    margin: 10px;
+    border: 1px solid green;
+    text-align: justify;
 
-
+}
 
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 200px;
+    grid-gap: 1%;
     border: 1px solid black;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 3;
     text-align: center;
-    /*align-items: center;
-    justify-items:center;*/
 }
 
 #box4 {
-     border: 1px solid green;
+     margin: 0;
      grid-column-start: 1;
      grid-column-end: 4;
      grid-row-start: 1;
-     grid-row-end: 2;
+     grid-row-end: 1;
+     border: 1px solid green;
     
-}
-p { 
-    border: 1px solid green;
-
 }
 
 #box5{
-    border: 1px solid black;
-    grid-column-start: 1;
+    border: 2px solid black;
+     grid-column-start: 1;
      grid-column-end: 2;
      grid-row-start: 2;
      grid-row-end: 2;
+     /*background-image: url("fermented_cabbage.jpg");*/
+     background-size: cover;
+
 }
 caption {
-    border: 1px solid red;
-    font-size: 1em;
-    caption-side: bottom;
+    color: white;
 }
 #box6{
     border: 1px solid purple;
@@ -137,6 +141,8 @@ caption {
      grid-column-end: 4;
      grid-row-start: 2;
      grid-row-end: 3;
+     /*background-image: url("little_plants.jpg");*/
+     background-size: cover;
 }
 
 
