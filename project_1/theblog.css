@@ -1,7 +1,7 @@
 body{
-    font-size: 14px;
+    font-size: 12px;
 }
-/* Configurtion breaks at 601 px. Optimized for Iphone 8 */ 
+/* Configuration breaks at 601 px. Optimized for Iphone 8 */ 
 
 .container{
     display: grid;
@@ -10,6 +10,8 @@ body{
     /*grid-auto-rows: minmax(100px, auto);*/
     border: 2px solid red;
 }
+
+/* Nav bar, displays home left. Menu to the right?*/
 
 .header {
     display: grid;
@@ -26,14 +28,15 @@ h1 {
     
     }
 
-.home{
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid red;
-    text-align: center;
     }
 
 .title {
     display:flex;
-    border: 1px solid blue;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -41,27 +44,41 @@ h1 {
     text-align: center;
     justify-content: center;
     font-size: 0.9em;
+    border: 1px solid blue;
 }
+.menu{
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    justify-content: center;
+    }
 
 .sidebar {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 118px;
     text-align: center;
+    align-items: center;
+    justify-items:center;
     border: 1px solid black;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    
 }
 
 #box1 {
-    border: 1px solid yellow;
+    width: 80px;
+    height: 80px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;  
-    border-radius: 55%;  
+    border-radius: 60%;  
+    background-image: url("author_photo.png");
+    background-size: cover;
+    border: 3px solid black;
 
     }
 
@@ -71,19 +88,22 @@ h1 {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3; 
+    font-size: 0.9em;
 }
 
 
 
 .content {
     display: grid;
-   
     grid-template-columns: 1fr 1fr;
     border: 1px solid black;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 3;
+    text-align: center;
+    /*align-items: center;
+    justify-items:center;*/
 }
 
 #box4 {
@@ -94,13 +114,22 @@ h1 {
      grid-row-end: 2;
     
 }
+p { 
+    border: 1px solid green;
+
+}
 
 #box5{
     border: 1px solid black;
     grid-column-start: 1;
-     grid-column-end: 4;
+     grid-column-end: 2;
      grid-row-start: 2;
      grid-row-end: 2;
+}
+caption {
+    border: 1px solid red;
+    font-size: 1em;
+    caption-side: bottom;
 }
 #box6{
     border: 1px solid purple;
