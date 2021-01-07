@@ -282,8 +282,8 @@ p {
       }
 
     #box1 {
-        width: 130px;
-        height: 130px;
+        width: auto;
+        height: auto;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
@@ -413,8 +413,8 @@ p {
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-     /*grid-template-rows: 1fr 800px 1fr;*/
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-rows: 1fr 70% 1fr;
+    /*grid-auto-rows: minmax(200px, auto);*/
     justify-content: center;
     border: 2px solid red;
     }
@@ -476,26 +476,15 @@ p {
     .sidebar{
        display: grid;
        margin: 0;
-       border: 1px solid black;
        grid-column-start: 1;
-       grid-column-end: 1;
+       grid-column-end: 2;
        grid-row-start: 2;
        grid-row-end: 4;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       border: 1px solid black;
        }
-/*
-    .sidebar {
-        display: grid;
-        margin: 0;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 70% 30%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        border: 1px solid black;
-        }
-  
-      p { 
+       p { 
         width: auto;
         height: auto;
         font-size: 1.5em;
@@ -503,49 +492,118 @@ p {
         border: 1px solid blue;
         text-align: justify;
         }
-  
-      #box1 {
-          width: 130px;
-          height: 130px;
-          grid-column-start: 1;
-          grid-column-end: 3;
-          grid-row-start: 2;
-          grid-row-end: 3;  
-          border-radius: 60%;  
-          /*background-image: url("author_photo.png");
+        #box1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 130px;
+        height: 130px;  
+        border-radius: 40%;  
+         /*background-image: url("author_photo.png");
           background-size: cover;*/
-          /*border: 3px solid black;
-          }
-      
-      #box2 {
-          width: auto;
-          height: 500px;
-          grid-column-start: 1;
-          grid-column-end: 3;
-          grid-row-start: 1;
-          grid-row-end: 2; 
-          font-size: 1em;
-          text-align: center;
-          border: 1px solid pink;
+        }
+
+        #box2 {
+        width: auto;
+        height: auto;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+        font-size: 1em;
+        text-align: center;
+        border: 1px solid pink;
           }
   
-          h2 {
+        h2 {
               font-size: 1.5em;
-          }*/
+          }
+
 
     .content {
-    border: 1px solid black;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    }
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40% 50%;
+        margin: 0%;
+        text-align: center;
+        border: 1px solid red;
+        }
+        h3{
+            font-size: 1.5em;
+        }
+        
+    #box4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border: 1px solid green;
+        }
+        
+    #box5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        width: auto;
+        height: auto;
+        background-image: url("images/fermented_cabbage.jpg");
+        background-size: cover;
+        border: 2px solid black;
+        }    
+        
+    #box6 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("images/little_plants.jpg");
+        background-size: cover;
+        border: 1px solid purple;
+        }   
+
 
     .footer {
-    border: 1px solid black;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    }
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 40% 60%;
+        justify-items: center;
+        border: 1px solid yellow;
+        }
+
+    #about {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1em;
+       grid-column-start: 2;
+       grid-column-end: 3;
+       grid-row-start: 2;
+       grid-row-end: 3;
+       border: 2px solid black;
+       }
+
+    #contact {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      margin: 3%;
+      width: 150px;
+      height: 50px;
+      background-image: url("images/icon_sm.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border: 2px solid orange;  
+      }
+
 }
