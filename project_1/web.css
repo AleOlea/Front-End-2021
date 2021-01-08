@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    background-color: wheat;
+    background-color:ivory;
     }
 /* Configuration breaks at 601 px. Optimized for Iphone 8 */ 
 
@@ -66,15 +66,17 @@ h1 {
     justify-content: center;
     border: 2px solid red;
     }
+   
 .menubox {
     display: flex;
     background-image: url("images/sandwich-menu-icon.jpg");
-    background-size: 100%;
+    background-size: 60%;
     background-repeat: no-repeat;
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 60%;
     border: 2px solid yellow;  
          }  
+         
 
 
 .sidebar {
@@ -231,8 +233,6 @@ p {
     border: 3px solid black;  
     }
 
-
-
 .home {
     display: flex;
     width: auto;
@@ -257,7 +257,7 @@ p {
 h1 {
     width: auto;
     height: auto;
-    font-size: 3em;
+    font-size: 2em;
     border: 2px solid red;
     }
 
@@ -272,7 +272,7 @@ h1 {
 .menubox {
     display: flex;
     background-image: url("images/sandwich-menu-icon.jpg");
-    background-size: 50%;
+    background-size: 30%;
     background-repeat: no-repeat;
     width: 45%;
     height: 60%;
@@ -290,17 +290,16 @@ h1 {
     border: 1px solid black;
     }
 
-    p { 
-      width: auto;
-      height: auto;
-      font-size: 1.5em;
-      margin: 10px;
-      border: 1px solid blue;
-      text-align: justify;
-      }
+p { 
+    width: auto;
+    height: auto;
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: justify;
+    border: 1px solid blue;
+    }
 
 #box1 {
-    
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -308,73 +307,75 @@ h1 {
     width: 170px;
     height: 170px;
     border-radius: 60%;  
-    background-image: url("images/author_photo.png");
-    background-size: cover;
+    /*background-image: url("images/author_photo.png");
+    background-size: cover;*/
     border: 10px solid olive;
      }
     
-    #box2 {
-        width: auto;
-        height: auto;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2; 
-        font-size: 1em;
-        text-align: center;
-        border: 1px solid pink;
-        }
+#box2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid pink;
+    }
 
-        h2 {
-            font-size: 1.5em;
-        }
+h2 {
+    font-size: 2em;
+    }
 
 
-    .content {
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 50%;
-        margin: 0%;
-        text-align: center;
-        border: 1px solid red;
-        }
-        h3{
-            font-size: 1.5em;
+.content {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 50%;
+    /*margin: 0%;*/
+    text-align: center;
+    border: 1px solid red;
+}
+
+h3{
+    font-size: 2em;
+    }
+/* box 3 was eliminated that is why it goes from box 2 to 4*/
+
+#box4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid green;
         }
         
-    #box4 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        border: 1px solid green;
-        }
-        
-    #box5 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        width: auto;
-        height: auto;
-        background-image: url("images/fermented_cabbage.jpg");
-        background-size: cover;
-        border: 2px solid black;
+#box5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: auto;
+    height: auto;
+    background-image: url("images/fermented_cabbage.jpg");
+    background-size: cover;
+    border: 4px solid olive;
         }    
         
-    #box6 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        background-image: url("images/little_plants.jpg");
-        background-size: cover;
-        border: 1px solid purple;
-        }   
+#box6 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("images/little_plants.jpg");
+    background-size: cover;
+    border: 4px solid purple;
+    }   
 
              
     .footer {
@@ -431,216 +432,209 @@ h1 {
 @media (min-width:1001px) {
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 35% 1fr;
     grid-template-rows: 1fr 70% 1fr;
-    /*grid-auto-rows: minmax(200px, auto);*/
     justify-content: center;
     border: 2px solid red;
     }
 
-
-    .header{
-   
+.header{
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 75px;
-    font-size: 1em; 
+    grid-template-rows: 100px;
     align-content: center;
     border: 1px solid black;
     }
 
-    h1 {
-        width: auto;
-        height: auto;
-        font-size: 2.5em;
-        border: 2px solid red;
-        }
 
-    .home {
-        display: flex;
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.1em;
-        border: 2px solid red;
-         }
+.home {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border: 2px solid red;
+    }
        
-    .title {
-        display:flex;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid blue;   
-       }
+.title {
+    display:flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;   
+    }
+
+h1 {
+    width: auto;
+    height: auto;
+    font-size: 3em;
+    border: 2px solid red;
+    }
             
+.menu{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: flex-end;
+    border: 2px solid red;
+    }
 
-    .menu {
-       display: flex;
-       width: auto;
-       height: auto;
-       justify-content: center;
-       font-size: 1.1em;
-       border: 2px solid red;
+.menubox {
+    display: flex;
+    background-image: url("images/sandwich-menu-icon.jpg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 60%;
+    align-items: center;
+    border: 2px solid yellow;  
         }  
-        /* .menu{
-            display: flex;
-            width: auto;
-            height: auto;
-            justify-content: flex-end;
-            border: 2px solid red;
-            }
 
-        .menubox {
-            display: flex;
-            background-image: url("images/sandwich-menu-icon.jpg");
-            background-size: 50%;
-            background-repeat: no-repeat;
-            width: 45%;
-            height: 60%;
-            align-items: center;
-            border: 2px solid yellow;  
-                 }  */ 
-
-
-    .sidebar{
-       display: grid;
-       margin: 0;
-       grid-column-start: 1;
-       grid-column-end: 2;
-       grid-row-start: 2;
-       grid-row-end: 4;
-       grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr 1fr;
-       border: 1px solid black;
-       }
-       p { 
-        width: auto;
-        height: auto;
-        font-size: 1.5em;
-        margin: 10px;
-        border: 1px solid blue;
-        text-align: justify;
-        }
-        #box1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: 130px;
-        height: 130px;  
-        border-radius: 40%;  
-         /*background-image: url("author_photo.png");
-          background-size: cover;*/
-        }
-
-        #box2 {
-        width: auto;
-        height: auto;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3; 
-        font-size: 1em;
-        text-align: center;
-        border: 1px solid pink;
-          }
-  
-        h2 {
-              font-size: 1.5em;
-          }
-
-
-    .content {
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 50%;
-        margin: 0%;
-        text-align: center;
-        border: 1px solid red;
-        }
-        h3{
-            font-size: 1.5em;
-        }
+.sidebar {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 30% 1fr ;
+    border: 1px solid black;
+    }
         
-    #box4 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        border: 1px solid green;
-        }
+p { 
+    width: auto;
+    height: auto;
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: justify;
+    border: 1px solid blue;
+    }
         
-    #box5 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        width: auto;
-        height: auto;
-        background-image: url("images/fermented_cabbage.jpg");
-        background-size: cover;
-        border: 2px solid black;
-        }    
+#box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    width: 170px;
+    height: 170px;
+    border-radius: 60%;  
+    /*background-image: url("images/author_photo.png");
+    background-size: cover;*/
+    border: 10px solid olive;
+    }
+            
+#box2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    width: auto;
+    height: auto;
+    margin: 5%;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid pink;
+    }
         
-    #box6 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        background-image: url("images/little_plants.jpg");
-        background-size: cover;
-        border: 1px solid purple;
-        }   
+h2 {
+    font-size: 2em;
+    }
+
+.content {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 50%;
+    margin: 0%;
+    text-align: center;
+    border: 1px solid red;
+    }
+        
+
+#box4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid green;
+    } 
+
+h3{
+    font-size: 2em;
+    }
+        
+    
+        
+#box5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: auto;
+    height: auto;
+    background-image: url("images/fermented_cabbage.jpg");
+    background-size: cover;
+    border: 4px solid olive;
+    }    
+        
+#box6 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("images/little_plants.jpg");
+    background-size: cover;
+    border: 4px solid olive;
+    }   
 
 
-    .footer {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 4;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 40% 60%;
-        justify-items: center;
-        border: 1px solid yellow;
-        }
+.footer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 40% 60%;
+    justify-items: center;
+    border: 1px solid yellow;
+    }
 
-    #about {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-size: 1em;
-       grid-column-start: 2;
-       grid-column-end: 3;
-       grid-row-start: 2;
-       grid-row-end: 3;
-       border: 2px solid black;
-       }
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 2px solid black;
+    }
 
-    #contact {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      margin: 3%;
-      width: 150px;
-      height: 50px;
-      background-image: url("images/icon_sm.png");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      border: 2px solid orange;  
-      }
+#contact {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 3%;
+    width: 150px;
+    height: 50px;
+    background-image: url("images/icon_sm.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 2px solid orange;  
+    }
 
 }
