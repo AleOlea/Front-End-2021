@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    background-color:grey;
+    background-color: wheat;
     }
 /* Configuration breaks at 601 px. Optimized for Iphone 8 */ 
 
@@ -57,13 +57,24 @@ h1 {
    /* border: 1px solid blue;*/
     }
 
+
 .menu{
     display: flex;
     width: auto;
     height: auto;
+    align-items: center;
     justify-content: center;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     }
+.menubox {
+    display: flex;
+    background-image: url("images/sandwich-menu-icon.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 50%;
+    border: 2px solid yellow;  
+         }  
 
 
 .sidebar {
@@ -249,14 +260,13 @@ p {
         justify-content: center;
         border: 1px solid blue;   
        }
-            
-    .menu {
-       display: flex;
-       width: auto;
-       height: auto;
-       justify-content: center;
-       font-size: 1.1em;
-       border: 2px solid red;
+    /* buscar otro icono */       
+    .menubox {
+       background-image: url("images/sandwich-menu-icon.jpg");
+       background-size: cover;
+       width: 50%;
+       height: 100%;
+       border: 2px solid yellow;
         }       
 
     .sidebar {
