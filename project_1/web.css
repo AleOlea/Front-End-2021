@@ -424,7 +424,7 @@ h3{
 
 
 
-@media (min-width:1001px) {
+@media (min-width:1025px) {
 .container{
     display: grid;
     grid-template-columns: 35% 1fr;
