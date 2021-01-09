@@ -108,7 +108,7 @@ body {
     grid-column-end: 3;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     }
 
 #contact {
@@ -227,35 +227,34 @@ body {
     border: 2px solid yellow;
     }
 
-
+/*cambie de grid a flex*/
              
 .footer {
-        display: grid;
+        display: flex;
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 4;
-        grid-template-columns: 1fr  ;
+        grid-template-columns: 1fr ;
         grid-template-rows: 40% 60%;
-        align-self: center;
-        justify-self: center;
-        padding: 3%;
+    
+        justify-content: space-between;
+       
         border: 1px solid yellow;
         }
 
 
     #about {
-       /*justify-content: center;
-       align-items: center;*/
+       margin-left: 80px;
        align-self: center;
        justify-self: center;
        font-size: 1em;
-       border: 2px solid black;
+      /* border: 2px solid black;*/
        }
       
 
     #contact {
-      
+      margin-right: 40px;
       width: 120px;
       height: 30px;
       /*align-self: center;*/
