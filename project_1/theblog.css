@@ -5,12 +5,14 @@ body {
     /*color: #444;*/
     }
 
+
+
 /* display until 601 px*/
 .container {
     display: grid;
     margin: 0%;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 400px 1fr; 
+    grid-template-rows: 70px 400px 1fr; 
     border: 2px solid red;
     }
   
@@ -98,7 +100,8 @@ h1 {
     }
 
 article {
-        line-height: 1.5; 
+        line-height: 1.4; 
+        font-size: 0.9em; 
         }
     
 
@@ -167,8 +170,7 @@ p {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    /*grid-template-rows: 1fr 800px 1fr;*/
-     grid-template-rows: 1fr 750px 1fr;
+    grid-template-rows: 100px 800px 1fr;
     /*border: 2px solid red;*/
     }     
     
@@ -212,9 +214,10 @@ a:hover {
 
 h1 {
     font-weight: lighter;
+    font-size: 2em;
     }
     
- .menu{
+.menu {
     display: flex;
     width: auto;
     height: auto;
@@ -250,31 +253,35 @@ h1 {
     flex-direction: column;
     text-align: justify;
     width: auto;
-    margin-left: 150px;
-    margin-right: 150px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
     /*border: 2px solid yellow;*/
     }
 
 article {
-    line-height: 2; 
+    line-height: 2;
+    font-size: 1.1em; 
     }
 
 h2 {
     font-style: italic;
     font-weight: lighter;
+    font-size: 1.5em;
     }
     
 h3 {
     font-style: italic;
     font-weight: lighter;
+    font-size: 1.5em;
     }
     
 h4 {
     font-style: italic;
     font-weight: lighter;
+    font-size: 1.5em;
     }
-
-/*cambie de grid a flex pasar cambios a web*/
              
 .footer {
         display: flex;
@@ -329,6 +336,10 @@ p {
 
 
 
+/*------------here start 1025pxs-------------*/
+
+/*------------here start 1025pxs-------------*/
+
 
 
 
@@ -336,7 +347,7 @@ p {
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 500px 1fr;
+    grid-template-rows: 1fr 800px 1fr;
     justify-content: center;
     border: 2px solid red;
     }
@@ -353,8 +364,7 @@ p {
     align-content: center;
     border: 1px solid black;
     }
-  
-
+    
 .home {
     display: flex;
     width: auto;
@@ -363,6 +373,10 @@ p {
     align-items: center;
     justify-content: center;
     border: 2px solid red;
+    }
+
+a:hover {
+    background-color: skyblue; 
     }
 
   
@@ -376,6 +390,11 @@ p {
     align-items: center;
     justify-content: center;
     border: 1px solid blue;   
+    }
+    
+h1 {
+    font-weight: lighter;
+    font-size: 2em;
     }
             
 .menu{
@@ -393,25 +412,62 @@ p {
     background-image: url("images/sandwich-menu-icon.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 40px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     align-items: center;
    /* border: 2px solid yellow;  */
-        }  
-        
+    }  
 
-
+         
 .content {
     display: grid;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    margin: 0%;
-    text-align: center;
     border: 1px solid red;
+    }
+        
+        
+#box3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+   
+    /*border: 2px solid yellow;*/
+    }
+    
+article {
+    line-height: 2.2; 
+    font-size: 1.1em;
+
+    }
+    
+h2 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.5em;
+    }
+        
+h3 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.5em;
+    }
+        
+h4 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.5em;
     }
 
 
@@ -430,7 +486,7 @@ p {
 #about {
    align-self: center;
    justify-self: center;
-   font-size: 1.1em;
+   font-size: 1.4em;
   /* border: 2px solid black;*/
    }
 
@@ -445,5 +501,15 @@ p {
   justify-self: center;
   /*border: 2px solid orange; */
   }
+  p {
+    line-height: 2; 
+    font-size: 0.9em;
+     }
 
 }
+
+
+
+
+
+
