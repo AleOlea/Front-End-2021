@@ -7,7 +7,7 @@ body {
 
 
 
-/* display until 601 px*/
+/* Configuration breaks at 601 px. Optimized Iphone 8 */ 
 .container {
     display: grid;
     margin: 0%;
@@ -56,6 +56,7 @@ a:hover {
     }
 
 h1 {
+    font-style: oblique;
     font-weight: lighter;
     font-size: 1.6em;
    }
@@ -99,12 +100,13 @@ h1 {
    /* border: 2px solid yellow;*/
     }
 
+
 article {
-        line-height: 1.4; 
-        font-size: 0.9em; 
+    font-weight: lighter;
+    line-height: 1.4; 
+    font-size: 0.9em; 
         }
     
-
 h2 {
     font-style: italic;
     font-weight: lighter;
@@ -213,9 +215,11 @@ a:hover {
     }
 
 h1 {
+    font-style: oblique;
     font-weight: lighter;
     font-size: 2em;
     }
+    
     
 .menu {
     display: flex;
@@ -393,9 +397,12 @@ a:hover {
     }
     
 h1 {
+    font-style: oblique;
     font-weight: lighter;
     font-size: 2em;
     }
+    
+        
             
 .menu{
     display: flex;
