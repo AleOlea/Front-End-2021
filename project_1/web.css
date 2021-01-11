@@ -565,12 +565,11 @@ h1 {
     background-image: url("images/sandwich-menu-icon.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 28%;
-    height: 28%;
+    width: 30%;
+    height: 30%;
     align-items: center;
     border: 2px solid yellow;  
         }  
-
         /*.menubox {
             /*display: flex;
             background-image: url("images/sandwich-menu-icon.jpg");
@@ -578,9 +577,9 @@ h1 {
             background-repeat: no-repeat;
             width: 26px;
             height: 28px;
-            border: 2px solid yellow;  
+            /*border: 2px solid yellow;  
             } */
-
+        
 
 .sidebar {
     display: grid;
