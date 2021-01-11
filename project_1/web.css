@@ -6,7 +6,7 @@ body {
 
 
 
-/* Configuration breaks at 601 px. Optimized Iphone 8 */ 
+
 
 .container {
     display: grid;
@@ -87,6 +87,8 @@ h1 {
     }  
 
 
+
+
 .sidebar {
     display:grid;
     grid-column-start: 1;
@@ -117,6 +119,7 @@ h1 {
     border: 4px solid olive;
     }
 
+
 #box2 {
     
     grid-column-start: 2;
@@ -138,7 +141,17 @@ h1 {
     
     }
 
-
+p { 
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-weight: lighter;
+    line-height: 1.4; 
+    font-size: 1em; 
+    /*border: 2px solid green;*/
+            }
+           
 .content {
     display: grid;
     grid-column-start: 1;
@@ -168,17 +181,23 @@ h3 {
     text-align:left;
     margin: 20px;
     }
-        
-p { 
-    margin-top: 0%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
-    font-weight: lighter;
-    line-height: 1.4; 
-    font-size: 0.9em; 
-    /*border: 2px solid green;*/
+
+a:hover {
+        color: skyblue; 
     }
+
+a {
+    font-size: 1em;
+    }
+
+
+button {
+    width: 120px;
+    height: 20px;
+    font-size: 1em;
+    background-color: green;
+}
+        
 
 
 #box5 {
@@ -194,21 +213,6 @@ p {
      border: 4px solid olive;
     }
 
-a:hover {
-        color: skyblue; 
-    }
-
-a {
-    font-size: 0.8em;
-    }
-
-
-button {
-    width: 100px;
-    height: 20px;
-    font-size: 1em;
-    background-color: green;
-}
 
 #box6 {
      grid-column-start: 2;
@@ -220,6 +224,8 @@ button {
      background-size: cover;
      border: 4px solid olive;
     }
+
+
 
 .footer {
     display: grid;
@@ -237,9 +243,10 @@ button {
     grid-column-start: 1;
     grid-column-end: 3;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     /*border: 2px solid black;*/
     }
+   
     
 #contact {
     display: flex;
@@ -251,9 +258,6 @@ button {
     align-self: center;
     justify-self: center;
     }
-    
-  
-     
 
 
 /* here start 601 pxs
@@ -274,12 +278,10 @@ button {
     display: grid;
     margin: 0%;
     grid-template-columns: 30% 1fr;
-    grid-auto-rows: minmax(75px, auto);/*cambie a min max sino funciona volver a la de a bajo*/
-    /*grid-template-rows: 1fr 60% 1fr;*/
+    grid-template-rows: 1fr 750px 1fr;
     justify-content: center;
     border: 2px solid red;
     }
-
 
 .header {
     display: grid;
@@ -290,7 +292,7 @@ button {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     align-content: center;
-    border: 3px solid black;  
+    border: 3px solid black; 
     }
 
 
@@ -300,8 +302,8 @@ button {
     height: auto;
     align-items: center;
     justify-content: center;
-    font-size: 1.1em;
-    border: 2px solid red;
+    font-size: 1.5em;
+   /*border: 2px solid red;*/
     }
 
 
@@ -319,14 +321,14 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 1px solid blue;   
+   /* border: 1px solid blue; */  
     }
 
 
 h1 {
     font-style: oblique;
     font-weight: lighter;
-    font-size: 2em;
+    font-size: 2.5em;
     }
 
 
@@ -336,7 +338,7 @@ h1 {
     height: auto;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     }
 
 
@@ -345,44 +347,49 @@ h1 {
     background-image: url("images/sandwich-menu-icon.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 28px;
     /*border: 2px solid yellow;  */
     } 
 
+
+
 .sidebar {
     display: grid;
+    margin: 2%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
     grid-template-columns: 1fr ;
-    grid-template-rows: 65% 35%;
-    align-items: center;
+    grid-template-rows: 50% 50%;
+    align-items:end;
     justify-items: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     }
-
 
 p { 
     width: auto;
     height: auto;
     font-size: 1.5em;
-    margin: 10px;
+    font-weight: lighter;
+    line-height: 1.4; 
     text-align: justify;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     }
+   
 
 #box1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;  
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;  
     background-image: url("images/author_photo.png");
     background-size: cover;
+    align-self: start;
     border: 10px solid olive;
      }
 
@@ -394,9 +401,8 @@ p {
     grid-row-end: 2; 
     width: auto;
     height: auto;
-    font-size: 1em;
     text-align: center;
-    border: 1px solid pink;
+    /*border: 1px solid pink;*/
     }
 
 h2 {
@@ -414,87 +420,78 @@ h2 {
     grid-template-rows: 40% 50%;
     /*margin: 0%;*/
     text-align: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
-
-h3{
-    font-size: 2em;
-    }
 /* box 3 was eliminated that is why it goes from box 2 to 4*/
 
 #box4 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    border: 1px solid green;
-        }
-        
+
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 1;
+     /*border: 1px solid green;*/
+    }
+
+h3 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align:left;
+    margin: 20px;
+    }
+
+button {
+    margin-top: 15px;
+    width: 120px;
+    height: 23px;
+    background-color: green;
+    }
+a:hover {
+        color: skyblue; 
+    }
+
+a {
+    font-size: 1em;
+    }
+
 #box5 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+    margin-left: 5px;
     width: auto;
     height: auto;
     background-image: url("images/fermented_cabbage.jpg");
     background-size: cover;
     border: 4px solid olive;
-        }    
+    }   
+
         
 #box6 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-right: 5px;
     background-image: url("images/little_plants.jpg");
     background-size: cover;
     border: 4px solid purple;
-    }   
-
-             
-    .footer {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 4;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 40% 60%;
-        justify-items: center;
-        border: 1px solid yellow;
-        }
-
-    #about {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-size: 1em;
-       grid-column-start: 2;
-       grid-column-end: 3;
-       grid-row-start: 2;
-       grid-row-end: 3;
-       border: 2px solid black;
-       }
-
-    #contact {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      margin: 3%;
-      width: 150px;
-      height: 50px;
-      background-image: url("images/icon_sm.png");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      border: 2px solid orange;  
-      }
-
+    } 
+ 
+    
+#contact {
+    display: flex;
+    background-image: url("images/icon_sm.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+    }
 }
-
-
-
 
 
 
@@ -535,7 +532,7 @@ h3{
     font-size: 1.5em;
     border: 2px solid red;
     }
-       
+
 .title {
     display:flex;
     grid-column-start: 2;
@@ -545,11 +542,12 @@ h3{
     align-items: center;
     justify-content: center;
     border: 1px solid blue;   
-    }
+    }  
 
 h1 {
-    width: auto;
-    height: auto;
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 2.5em;
     font-size: 3em;
     border: 2px solid red;
     }
@@ -565,13 +563,24 @@ h1 {
 .menubox {
     display: flex;
     background-image: url("images/sandwich-menu-icon.jpg");
-    background-size: 40%;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 35%;
-    height: 60%;
+    width: 28%;
+    height: 28%;
     align-items: center;
     border: 2px solid yellow;  
         }  
+
+        /*.menubox {
+            /*display: flex;
+            background-image: url("images/sandwich-menu-icon.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 26px;
+            height: 28px;
+            border: 2px solid yellow;  
+            } */
+
 
 .sidebar {
     display: grid;

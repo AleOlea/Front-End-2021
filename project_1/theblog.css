@@ -148,8 +148,7 @@ h4 {
 
 #contact {
     display: flex;
-    /*grid-column-start: 3;
-    grid-column-end: 4;*/
+  
     background-image: url("images/icon_sm.png");
     background-repeat: no-repeat;
     background-size: contain;
