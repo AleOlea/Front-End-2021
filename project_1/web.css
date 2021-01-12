@@ -275,9 +275,8 @@ button {
 
 .container {
     display: grid;
-    margin: 0%;
     grid-template-columns: 30% 1fr;
-    grid-template-rows: 1fr 750px 1fr;
+    grid-template-rows: 1fr minmax(780px, auto) 1fr;
     justify-content: center;
     border: 2px solid red;
     }
@@ -408,7 +407,7 @@ p {
 h2 {
     font-style: italic;
     font-weight: lighter;
-    font-size: 2.5em;
+    font-size: 2em;
     }
     
 
@@ -438,7 +437,7 @@ h2 {
 h3 {
     font-style: italic;
     font-weight: lighter;
-    font-size: 1.8em;
+    font-size: 2em;
     text-align:left;
     margin: 20px;
     }
@@ -508,7 +507,7 @@ a {
     display: grid;
     grid-template-columns: 35% 1fr;
     /*grid-template-rows: 1fr 70% 1fr;*/
-    grid-template-rows: 1fr minmax(900px, auto) 1fr;
+    grid-template-rows: 1fr minmax(1050px, auto) 1fr;
     justify-content: center;
     border: 2px solid red;
     }
@@ -534,7 +533,7 @@ a {
     height: auto;
     align-items: center;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 3em;
     /*border: 2px solid red;*/
     }
 
@@ -717,14 +716,13 @@ a {
 
 #about {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    justify-self: stretch;
     border: 2px solid black;
+    
     }
 
 #contact {
