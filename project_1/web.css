@@ -138,7 +138,6 @@ h1 {
     font-style: italic;
     font-weight: lighter;
     font-size: 1.2em;
-    
     }
 
 p { 
@@ -407,8 +406,11 @@ p {
     }
 
 h2 {
-    font-size: 1.8em;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 2.5em;
     }
+    
 
 
 .content {
@@ -654,22 +656,29 @@ h2 {
     align-self: center;
     /*border: 1px solid green;*/
     } 
-    /*#box4 {
-
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        align-self: center;
-        /*border: 1px solid green;
-       }*/
    
 
-h3{
-    font-size: 2em;
+h3 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 3em;
     }
-        
+
+
+
+button {
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(97, 245, 97);
+    }
+a:hover {
+    color: skyblue; 
+    }
     
+a {
+    font-size: 1.5em;
+    }
         
 #box5 {
     grid-column-start: 1;
@@ -723,9 +732,9 @@ h3{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin: 3%;
-    width: 150px;
-    height: 50px;
+    margin: 0;
+    width: 180px;
+    height: 60px;
     background-image: url("images/icon_sm.png");
     background-repeat: no-repeat;
     background-size: 100%;
