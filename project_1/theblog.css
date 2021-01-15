@@ -1,3 +1,7 @@
+
+  @import "theblog3.css";
+  @import "theblog2.css";
+
 body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,7 +17,7 @@ body {
     grid-template-columns: 1fr;
     /*grid-template-rows: 70px 400px 1fr; */
     grid-template-rows: 1fr minmax(440px, auto) 1fr;
-    border: 2px solid red;
+   /* border: 2px solid red;*/
     }
   
 
@@ -161,9 +165,10 @@ p {
    line-height: 1.8; 
    font-size: 0.9em;
 }
- 
 
-/*------------here start 601 to 1024pxs-------------*/
+ 
+/*
+------------here start 601 to 1024pxs-------------
 
 
 @media (min-width:601px) and (max-width:1024px) {
@@ -172,7 +177,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px minmax(830px, auto) 1fr;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     }     
   
 
@@ -185,7 +190,7 @@ p {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     align-content: center;
-    /*border: 3px solid black; */ 
+    border: 3px solid black; 
     }
    
 .home {
@@ -195,7 +200,7 @@ p {
     font-size: 1.2em;
     align-items: center;
     justify-content: center;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     }
 
 a:hover {
@@ -210,7 +215,7 @@ a:hover {
     height: auto;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid blue; */  
+    border: 1px solid blue;  
     }
 
 h1 {
@@ -226,7 +231,7 @@ h1 {
     height: auto;
     align-items: center; 
     justify-content: center;
-   /* border: 2px solid red;*/
+    border: 2px solid red;
     }   
 
 .menubox {
@@ -235,7 +240,7 @@ h1 {
     background-repeat: no-repeat;
     width: 26px;
     height: 26px;
-    /*border: 2px solid yellow; */ 
+    border: 2px solid yellow;  
     } 
 
 
@@ -247,7 +252,7 @@ h1 {
     grid-row-end: 4;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 
@@ -260,7 +265,7 @@ h1 {
     margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
-    /*border: 2px solid yellow;*/
+    border: 2px solid yellow;
     }
 
 article {
@@ -294,7 +299,7 @@ h4 {
         grid-row-end: 4;
         grid-template-columns: 1fr;
         justify-content: space-evenly;
-        /*border: 1px solid yellow;*/
+        border: 1px solid yellow;
         }
 
 
@@ -302,7 +307,7 @@ h4 {
        align-self: center;
        justify-self: center;
        font-size: 1em;
-      /* border: 2px solid black;*/
+       border: 2px solid black;
        }
 
       
@@ -314,7 +319,7 @@ h4 {
       background-size: contain;
       align-self: center;
       justify-self: center;
-      /*border: 2px solid orange; */
+      border: 2px solid orange; 
       }
 
 p {
@@ -323,30 +328,20 @@ p {
      }
     
 }
-
-
 */
 
 
 
 
-
-
-
-
-
-
-
-
-
 /*------------here start 1025pxs-------------*/
 
 /*------------here start 1025pxs-------------*/
 
 
-
+/*
 
 @media (min-width:1025px) {
+
 .container{
     display: grid;
     grid-template-columns: repeat (3, 1fr);
@@ -375,7 +370,7 @@ p {
     font-size: 1.5em;
     align-items: center;
     justify-content: center;
-    /*border: 2px solid red;*/
+    /*border: 2px solid red;
     }
 
 a:hover {
@@ -390,7 +385,7 @@ a:hover {
     height: auto;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid blue; */  
+    border: 1px solid blue;  
     }
     
 h1 {
@@ -405,7 +400,7 @@ h1 {
     height: auto;
     align-items: center; 
     justify-content: center;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     }
    
 
@@ -416,7 +411,7 @@ h1 {
     width: 26px;
     height: 26px;
     align-items: center;
-   /* border: 2px solid yellow;  */
+    border: 2px solid yellow;  
     }  
 
          
@@ -443,7 +438,7 @@ h1 {
     margin-top: 50px;
     width: auto;
     height: auto;
-    /*border: 2px solid yellow;*/
+    border: 2px solid yellow;
     }
     
 article {
@@ -479,7 +474,7 @@ h4 {
     grid-row-end: 4;
     grid-template-columns: 1fr;
     justify-content: space-evenly;
-    /*border: 1px solid yellow;*/
+    border: 1px solid yellow;
     }
 
 
@@ -487,7 +482,7 @@ h4 {
    align-self: center;
    justify-self: center;
    font-size: 1.4em;
-  /* border: 2px solid black;*/
+   border: 2px solid black;
    }
 
   
@@ -499,14 +494,15 @@ h4 {
   background-size: contain;
   align-self: center;
   justify-self: center;
-  /*border: 2px solid orange; */
+  border: 2px solid orange; 
   }
   p {
     line-height: 2; 
     font-size: 0.9em;
      }
-
-}
+    
+    }
+*/
 
 
 
