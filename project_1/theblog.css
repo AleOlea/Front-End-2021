@@ -2,7 +2,7 @@
   @import "theblog3.css";
   @import "theblog2.css";
 
-  @media (max-width:600px) {
+  @media (max-width:600px) { 
 
 body {
     margin:0;

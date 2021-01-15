@@ -1,20 +1,23 @@
-body {
+
+ @import "web2.css";
+
+@media (max-width:600px) { 
+
+    body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     background-color: #fffff8;
+    color: #2F3348;
     }
-
-
-
 
 
 .container {
     display: grid;
     margin: 0%;
     grid-template-columns:1fr;
-    /*grid-auto-rows: minmax(75px, auto);*/
-    grid-template-rows: 70px 120px 400px 1fr;
-    border: 2px solid red;
+    grid-template-rows: 80px 125px minmax(400px, auto) 1fr;
+    border: 1px solid red;
     }
 
    
@@ -24,7 +27,7 @@ body {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;  
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: auto;
     align-content: center;
    /* border: 1px solid black;  */
@@ -34,7 +37,7 @@ body {
     display: flex;
     width: auto;
     height: auto;
-    font-size: 1em;
+    font-size: 1.1em;
     align-items: center;
     justify-content: center;
     /*border: 2px solid red;*/
@@ -78,6 +81,7 @@ h1 {
     }  
 
 
+
 .sidebar {
     display:grid;
     grid-column-start: 1;
@@ -92,7 +96,6 @@ h1 {
     }
 
 #box1 {
-   
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -104,11 +107,10 @@ h1 {
     height: 80px;
     align-self: center;
     justify-self: center;
-    border: 4px solid olive;
+    border: 4px solid #2F3348;
     }
 
 #box2 {
-    
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -129,7 +131,7 @@ h1 {
 p { 
     margin-top: 0%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     text-align: justify;
     font-weight: lighter;
     line-height: 1.4; 
@@ -169,18 +171,18 @@ h3 {
 
 button {
     width: 120px;
-    height: 20px;
-    font-size: 1em;
-    background-color: green;
+    height: 30px;
+    font-size: 0.9em;
+    background-color: #A8E15C;
     }
 
 a {
     font-size: 1em;
-    color: skyblue; 
+    /*color: skyblue; */
   }
 
 a:hover {
-        background-color: skyblue; 
+        background-color: lemonchiffon; 
         }
         
 #box5 {
@@ -193,7 +195,7 @@ a:hover {
      height: auto;
      background-image: url("images/fermented_cabbage.jpg");
      background-size: cover;
-     border: 4px solid olive;
+     border: 4px solid #2F3348;
     }
 
 #box6 {
@@ -204,7 +206,7 @@ a:hover {
      margin-right: 5px;
      background-image: url("images/little_plants.jpg");
      background-size: cover;
-     border: 4px solid olive;
+     border: 4px solid #2F3348;
     }
 
 
@@ -239,6 +241,8 @@ a:hover {
     justify-self: center;
     }
 
+}
+
 
 /* here start 601 pxs
  here start 601 pxs
@@ -250,7 +254,7 @@ a:hover {
 
 
 
-
+/*
 
 @media (min-width:601px) and (max-width:1024px) {
 
@@ -272,7 +276,7 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     align-content: center;
-   /* border: 3px solid black;*/
+    border: 3px solid black;
     }
 
 
@@ -283,7 +287,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
-   /*border: 2px solid red;*/
+    border: 2px solid red;
     }
 
 
@@ -299,7 +303,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-   /* border: 1px solid blue; */  
+    border: 1px solid blue;  
     }
 
 
@@ -317,18 +321,18 @@ h1 {
     height: auto;
     align-items: center;
     justify-content: center;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     }
 
 
 .menubox {
-    /*display: flex;*/
+    /*display: flex;*//*
     background-image: url("images/sandwich-menu-icon.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 26px;
     height: 28px;
-    /*border: 2px solid yellow;  */
+    /*border: 2px solid yellow;  
     } 
 
 
@@ -344,7 +348,7 @@ h1 {
     grid-template-rows: 50% 50%;
     align-items:end;
     justify-items: center;
-    /*border: 1px solid black;*/
+    /*border: 1px solid black;
     }
 
 p { 
@@ -354,7 +358,7 @@ p {
     font-weight: lighter;
     line-height: 1.3; 
     text-align: justify;
-    /*border: 1px solid blue;*/
+    /*border: 1px solid blue;
     }
    
 
@@ -381,7 +385,7 @@ p {
     width: auto;
     height: auto;
     text-align: center;
-    /*border: 1px solid pink;*/
+    /*border: 1px solid pink;
     }
 
 h2 {
@@ -400,9 +404,9 @@ h2 {
     grid-row-end: 4;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40% 50%;
-    /*border: 1px solid red;*/
+    /*border: 1px solid red;
 }
-/* box 3 was eliminated that is why it goes from box 2 to 4*/
+
 
 #box4 {
 
@@ -411,7 +415,7 @@ h2 {
      grid-row-start: 1;
      grid-row-end: 1;
      align-self: center;
-     /*border: 1px solid green;*/
+     /*border: 1px solid green;
     }
 
 h3 {
@@ -476,7 +480,7 @@ a:hover {
     justify-self: center;
     }
 }
-
+*/
 
 
 
