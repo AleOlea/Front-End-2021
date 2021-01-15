@@ -2,6 +2,8 @@
   @import "theblog3.css";
   @import "theblog2.css";
 
+  @media (max-width:600px) {
+
 body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -165,6 +167,7 @@ p {
    line-height: 1.8; 
    font-size: 0.9em;
 }
+  }
 
  
 /*
