@@ -145,7 +145,7 @@ h2 {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40% 50% 10%;
+    grid-template-rows: 40% 55%;
     border: 1px solid red;
 }
 
@@ -168,7 +168,7 @@ h3 {
     }
 
 button {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     width: 120px;
     height: 30px;
     font-size: 0.9em;
@@ -188,7 +188,7 @@ a:hover {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
-    margin-left: 5px;
+    margin-left:0;
     width: auto;
     height: auto;
     background-image: url("images/fermented_cabbage.jpg");
@@ -203,11 +203,12 @@ a:hover {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-right: 5px;
+    margin-right: 0;
     background-image: url("images/little_plants.jpg");
     background-size: cover;
     border: 4px solid #2F3348;
     } 
+
 
 
 
