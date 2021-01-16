@@ -43,16 +43,21 @@ p {
     
 button {
     width: 120px;
-    height: 30px;
+    height: 28px;
     font-size: 0.9em;
     background-color: #A8E15C;
     }
 
 a {
     font-size: 1em;
-    color: skyblue; 
-  }
+   }
+    
+a:hover {
+    background-color: lemonchiffon; 
+    }
 }
+
+
 
   /*@media (min-width:601px) and (max-width:1024px)*/
   @media (min-width:601px) and (max-width:1024px) {
@@ -74,7 +79,7 @@ a {
 p { 
     width: auto;
     height: auto;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: lighter;
     line-height: 1.6; 
     text-align: justify;
