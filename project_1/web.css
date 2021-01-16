@@ -1,18 +1,19 @@
 
  @import "web2.css";
  @import "web3.css";
+ @import "typographyweb.css";
 
 
 
 @media (max-width:600px) { 
 
-    body {
+   /*body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     background-color: #fffff8;
-    color: #2F3348;
-    }
+    color: black;
+    }*/
 
 
 .container {
@@ -57,12 +58,12 @@
     text-align: center;
    /* border: 1px solid blue;*/
 }
-
+/*
 h1 {
     font-style: oblique;
     font-weight: lighter;
     font-size: 1.6em;
-   }
+   }*/
  
 .menu{
     display: flex;
@@ -125,12 +126,12 @@ h1 {
    /* border: 1px solid pink;*/
     }
 
- h2 {
+ /*h2 {
     font-style: italic;
     font-weight: lighter;
     font-size: 1.2em;
-    }
-
+    }*/
+/*
 p { 
     margin-top: 0%;
     margin-left: 5%;
@@ -140,7 +141,7 @@ p {
     line-height: 1.4; 
     font-size: 1em; 
     /*border: 2px solid green;*/
-    }
+   /* }*/
 
            
 .content {
@@ -164,14 +165,14 @@ p {
      /*border: 1px solid green;*/
     }
 
-h3 {
+/*h3 {
     font-style: italic;
     font-weight: lighter;
     font-size: 1.2em;
     text-align:left;
     margin: 20px;
-    }
-
+    }*/
+/*
 button {
     width: 120px;
     height: 30px;
@@ -182,11 +183,11 @@ button {
 a {
     font-size: 1em;
     /*color: skyblue; */
-  }
-
+  /*}*/
+/*
 a:hover {
         background-color: lemonchiffon; 
-        }
+        }*/
         
 #box5 {
      grid-column-start: 1;
