@@ -19,7 +19,7 @@ body {
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows:  150px minmax(1000px, auto) 1fr;
     justify-content: center;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     }
    
    
