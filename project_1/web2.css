@@ -13,13 +13,15 @@ body {
     }
 
 
+
 .container {
     display: grid;
     grid-template-columns: 30% 1fr;
-    grid-template-rows: 100px minmax(830px, auto) 1fr;
+    grid-template-rows: 100px minmax(750px, auto) 1fr;
     justify-content: center;
     border: 2px solid red;
     }
+
 
 
 .header {
@@ -28,7 +30,7 @@ body {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;  
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     align-content: center;
     border: 1px solid black;
@@ -40,7 +42,7 @@ body {
     height: auto;
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 1.7em;
     /*border: 2px solid red;*/
     }
     
@@ -75,10 +77,11 @@ h1 {
     background-image: url("images/sandwich-menu-icon.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 26px;
-    height: 28px;
+    width: 28px;
+    height: 30px;
     /*border: 2px solid yellow;*/
     } 
+
 
 
 .sidebar {
@@ -136,6 +139,7 @@ h2 {
     font-weight: lighter;
     font-size: 1.8em;
     }
+
     
 
 .content {
@@ -145,8 +149,8 @@ h2 {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40% 55%;
-    border: 1px solid red;
+    grid-template-rows: 45% 55%;
+    /*border: 1px solid red;*/
 }
 
 #box4 {
@@ -156,7 +160,7 @@ h2 {
     grid-row-start: 1;
     grid-row-end: 1;
     justify-items: center;
-    border: 1px solid green;
+   /* border: 1px solid green;*/
     }
 
 h3 {
@@ -168,7 +172,7 @@ h3 {
     }
 
 button {
-    /*margin-bottom: 30px;*/
+    margin-bottom: 30px;
     width: 120px;
     height: 30px;
     font-size: 0.9em;
@@ -194,10 +198,8 @@ a:hover {
     background-image: url("images/fermented_cabbage.jpg");
     background-size: cover;
     border: 4px solid #2F3348;
-    
     }   
-
-        
+     
 #box6 {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -209,44 +211,45 @@ a:hover {
     border: 4px solid #2F3348;
     } 
 
+    figcaption {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 5px;
+        /*border: 1px solid red;*/   
+    }
 
+    
 
-
-
-
-
-
-
-    .footer {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 4;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        /*border: 1px solid black;*/
-        }
+.footer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    /*border: 1px solid black;*/
+    }
         
-    #about {
-        display: flex;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        justify-content: center;
-        align-content: center;
-        /*border: 2px solid black;*/
-        }
-        
-    #contact {
-        display: flex;
-        background-image: url("images/icon_sm.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80px;
-        height: 30px;
-        align-self: center;
-        justify-self: center;
-        }
+#about {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    align-content: center;
+    /*border: 2px solid black;*/
+    }
+
+#contact {
+    display: flex;
+    background-image: url("images/icon_sm.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+    }
 
 }
  
