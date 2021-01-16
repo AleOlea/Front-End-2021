@@ -5,25 +5,18 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
         background-color: #fffff8;
-        /*color: #444;*/
+        color: black;
         }
 
     .container {
         display: grid;
         margin: 0%;
         grid-template-columns: 1fr;
-        /*grid-template-rows: 200px 700px 100px;*/
         grid-template-rows: 100px minmax(800px, auto) 1fr;
-        border: 2px solid blue;
+        /*border: 2px solid blue;*/
         }     
-        /*.container {
-            display: grid;
-            margin: 0%;
-            grid-template-columns: 1fr;
-            /*grid-template-rows: 70px 400px 1fr; 
-            grid-template-rows: 1fr minmax(440px, auto) 1fr;
-            border: 2px solid red;
-            }*/
+       
+        
     
     .header {
         display: grid;
@@ -36,7 +29,7 @@
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
         align-content: center;
-        border: 3px solid black; 
+        border-bottom: 3px solid olive; 
         }
        
     .home {
@@ -46,11 +39,11 @@
         font-size: 1.2em;
         align-items: center;
         justify-content: center;
-        border: 2px solid red;
+        /*border: 2px solid red;*/
         }
     
     a:hover {
-            background-color: skyblue; 
+            background-color: lemonchiffon; 
         }
        
     .title {
@@ -61,23 +54,16 @@
         height: auto;
         align-items: center;
         justify-content: center;
-        border: 1px solid blue;  
+        /*border: 1px solid blue; */ 
         }
-    
-    h1 {
-        font-style: oblique;
-        font-weight: lighter;
-        font-size: 2em;
-        }
-        
-        
+     
     .menu {
         display: flex;
         width: auto;
         height: auto;
         align-items: center; 
         justify-content: center;
-        border: 2px solid red;
+        /*border: 2px solid red;*/
         }   
     
     .menubox {
@@ -86,7 +72,7 @@
         background-repeat: no-repeat;
         width: 26px;
         height: 26px;
-        border: 2px solid yellow;  
+       /* border: 2px solid yellow;*/
         } 
     
     
@@ -101,7 +87,7 @@
         height: auto;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
     
     #box3 {
@@ -114,12 +100,18 @@
         /*margin-top: 50px;
         margin-left: 200px;
         margin-right: 200px;*/
-        border: 2px solid green;
+        /*border: 2px solid green;*/
         }
     
     article {
         line-height: 2;
         font-size: 1.1em; 
+        }
+
+    h1 {
+        font-style: oblique;
+        font-weight: lighter;
+        font-size: 2em;
         }
     
     h2 {
@@ -139,6 +131,15 @@
         font-weight: lighter;
         font-size: 1.5em;
         }
+
+    p {
+            line-height: 1.8; 
+            font-size: 0.9em;
+        }
+    a:hover {
+            background-color: lemonchiffon; 
+            }
+
                  
     .footer {
             display: flex;
@@ -148,7 +149,7 @@
             grid-row-end: 4;
             grid-template-columns: 1fr;
             justify-content: space-evenly;
-            border: 1px solid yellow;
+            border-top: 2px solid olive;
             }
     
     
@@ -156,7 +157,7 @@
            align-self: center;
            justify-self: center;
            font-size: 1em;
-           border: 2px solid black;
+           /*border: 2px solid black;*/
            }
     
           
@@ -168,12 +169,8 @@
           background-size: contain;
           align-self: center;
           justify-self: center;
-          border: 2px solid orange; 
+        /*  border: 2px solid orange; */
           }
-    
-    p {
-        line-height: 1.8; 
-        font-size: 0.9em;
-         }
+
         
     }
