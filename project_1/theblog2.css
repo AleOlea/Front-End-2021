@@ -74,6 +74,7 @@
         height: 26px;
        /* border: 2px solid yellow;*/
         } 
+
     
     #box1 {
         display: flex;
@@ -83,8 +84,7 @@
         justify-content: center;  
         /*border: 1px solid red;*/
         }
-        
-        
+            
     #box2 {
         width: 80px;
         height: 80px;
@@ -103,6 +103,7 @@
         text-align: justify;
         /*border: 2px solid yellow;*/
         }
+        
     
     
     .content {
