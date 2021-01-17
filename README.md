@@ -5,8 +5,8 @@
 
  The project is organized as follows;
 
- Main web page: web.hmtl 
- Blog: theblog.html
+ Main web page: web.hmtl <br />
+ Blog: theblog.html<br />
  Folder for images.
 
 Note: Typography on another file was only done for the main page
