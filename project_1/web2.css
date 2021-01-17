@@ -9,7 +9,7 @@
     grid-template-columns: 30% 1fr;
     grid-template-rows: 100px minmax(760px, auto) 1fr;
     justify-content: center;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     }
 
 
@@ -69,31 +69,34 @@
 
 .sidebar {
     display: grid;
-    margin: 10%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
     grid-template-columns: 1fr ;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 20% 80%;
+    margin: 10%;
     align-items:end;
     justify-items: center;
    /* border: 1px solid black;*/
     }
+    
 
 #box1 {
     grid-column-start: 1;
     grid-column-end: 2; 
     grid-row-start: 2;
     grid-row-end: 3;  
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;  
-    background-image: url("images/author_photo.png");
+    width: 170px;
+    height: 230px;
+    border-radius: 15%;  
+    background-image: url("images/snail1.jpg");
     background-size: cover;
     align-self: start;
-    border: 10px solid olive;
+    border: 2px solid olive;
      }
+
+     
 
 #box2 {
     grid-column-start: 1;
@@ -103,6 +106,7 @@
     width: auto;
     height: auto;
     text-align: center;
+    align-self: start;
     /*border: 1px solid pink;*/
     }
 
@@ -137,6 +141,7 @@
     margin-left:0;
     width: auto;
     height: auto;
+    border-radius: 15%;  
     background-image: url("images/fermented_cabbage.jpg");
     background-size: cover;
     margin-right:5%;
@@ -149,6 +154,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     margin-right: 0;
+    border-radius: 15%;  
     background-image: url("images/little_plants.jpg");
     background-size: cover;
     margin-right:5%;

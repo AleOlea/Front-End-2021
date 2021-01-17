@@ -1,4 +1,4 @@
-
+/* here the requested links*/
  @import "web2.css";
  @import "web3.css";
  @import "typographyweb.css";
@@ -146,6 +146,7 @@
      margin-left: 5px;
      width: auto;
      height: auto;
+     border-radius: 15%;  
      background-image: url("images/fermented_cabbage.jpg");
      background-size: cover;
      border: 4px solid olive;
@@ -157,6 +158,7 @@
      grid-row-start: 2;
      grid-row-end: 3;
      margin-right: 5px;
+     border-radius: 15%;  
      background-image: url("images/little_plants.jpg");
      background-size: cover;
      border: 4px solid olive;
