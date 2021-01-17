@@ -93,18 +93,6 @@
         border-radius: 50%;
         border: 4px solid olive;
         }
-
-    p {
-        width: 300px;
-        height: 80px;
-        align-self: center;
-        justify-self:center;
-        margin-left:30px;
-        text-align: justify;
-        /*border: 2px solid yellow;*/
-        }
-        
-    
     
     .content {
         display: grid;
@@ -155,11 +143,21 @@
         font-size: 1.5em;
         }
         
-
+    
     p {
-            line-height: 1.8; 
-            font-size: 0.9em;
+        font-weight: lighter;
+        font-style: italic;
+        line-height: 1.8; 
+        font-size: 0.9em;
+        width: 300px;
+        height: 80px;
+        align-self: center;
+        justify-self:center;
+        margin-left:30px;
+        text-align: justify;
+        /*border: 2px solid yellow;*/
         }
+
     a:hover {
             background-color: lemonchiffon; 
             }
