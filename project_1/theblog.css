@@ -167,6 +167,8 @@ p {
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 4;
+    width: auto;
+    height: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     border-top: 2px solid olive; 
@@ -176,8 +178,6 @@ p {
     display: flex;
     grid-column-start: 1;
     grid-column-end: 3;
-    width: auto;
-    height: auto;
     margin-left: 20px;
     /*border: 2px solid black;*/
     }

@@ -78,34 +78,35 @@ body {
 
 
  #box1 {
-        display: flex;
-        flex-flow: column;
-        width: auto;
-        height: auto;
-        align-items: center; 
-        justify-content: center;  
-        margin: 20%;
-        /*border: 1px solid red;*/
-        }
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+    align-items: center; 
+    justify-content: center; 
+    margin: 20%;
+    /*border: 1px solid red;*/
+    }
             
-    #box2 {
-        width: 100px;
-        height: 100px;
-        background-image: url("images/author_photo.png");
-        background-size: cover;
-        border-radius: 50%;
-        border: 4px solid olive;
-        }
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-image: url("images/author_photo.png");
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 4px solid olive;
+    }
 
-    p {
-        width: auto;
-        height: auto;
-        align-self: center;
-        justify-self:center;
-        margin: 0%;
-        text-align: justify;
-        /*border: 2px solid yellow;*/
-        }
+p {
+    width: auto;
+    height: auto;
+    align-self: center;
+    justify-self:center;
+    margin: 0%;
+    text-align: justify;
+    /*border: 2px solid yellow;*/
+    }
         
 
          
@@ -117,6 +118,8 @@ body {
     grid-row-end: 4;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    margin: 5%;
+   
     /*border: 1px solid red;*/
     }
         
@@ -167,6 +170,7 @@ h4 {
 p {
     line-height: 2; 
     font-size: 0.9em;
+  
          }
 
 a:hover {
