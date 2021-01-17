@@ -25,6 +25,7 @@
     border-bottom: 2px solid olive;
     }
 
+
 .home {
     display: flex;
     width: auto;
@@ -34,6 +35,7 @@
     font-size: 1.7em;
     /*border: 2px solid red;*/
     }
+
     
 .title {
     display:flex;
@@ -46,6 +48,7 @@
     text-align: center;
     /*border: 1px solid blue; */ 
     }
+
     
  .menu {
     display: flex;
@@ -56,6 +59,7 @@
     /*border: 2px solid red;*/
     }
 
+
 .menubox {
     background-image: url("images/sandwich-menu-icon.jpg");
     background-size: contain;
@@ -64,7 +68,6 @@
     height: 30px;
     /*border: 2px solid yellow;*/
     } 
-
 
 
 .sidebar {
@@ -97,7 +100,6 @@
      }
 
      
-
 #box2 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -111,7 +113,6 @@
     }
 
 
-
 .content {
     display: grid;
     grid-column-start: 2;
@@ -121,7 +122,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 45% 50%;
     /*border: 1px solid red;*/
-}
+   }
+
 
 #box4 {
     display: grid;
@@ -132,6 +134,7 @@
     justify-items: center;
    /* border: 1px solid green;*/
     }
+
 
 #box5 {
     grid-column-start: 1;
@@ -146,7 +149,8 @@
     background-size: cover;
     margin-right:5%;
     border: 4px solid olive;
-    }   
+    } 
+
      
 #box6 {
     grid-column-start: 2;
@@ -160,8 +164,6 @@
     margin-right:5%;
     border: 4px solid olive;
     } 
-
-
 
 .footer {
     display: grid;

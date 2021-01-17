@@ -11,17 +11,20 @@ body {
     color: black;
     }
 
+
 h1 {
     font-style: oblique;
     font-weight: lighter;
     font-size: 1.6em;
     }
 
+
 h2 {
     font-style: italic;
     font-weight: lighter;
     font-size: 1.2em;
     }
+
 
 h3 {
     font-style: italic;
@@ -30,6 +33,7 @@ h3 {
     text-align:left;
     margin: 20px;
     }
+
 
 p { 
     margin-top: 0%;
@@ -50,9 +54,11 @@ button {
     background-color: #A8E15C;
     }
 
+
 a {
     font-size: 1em;
    }
+
     
 a:hover {
     background-color: lemonchiffon; 
@@ -61,7 +67,7 @@ a:hover {
 
 
 
-  /*@media (min-width:601px) and (max-width:1024px)*/
+  /*Typographyy apply over @media (min-width:601px) and (max-width:1024px)*/
 
   @media (min-width:601px) and (max-width:1024px) {
 
@@ -130,6 +136,8 @@ figcaption {
 }
  }
 
+
+  /*Typographyy apply over @media (min-width:601px) and (max-width:1024px)*/
  /*-------1025 px--------------------------------*/
 
  @media (min-width:1025px) {
@@ -141,12 +149,15 @@ body {
         background-color: #fffff8;
         color: black;
         }
+
+
  h1 {
         font-style: oblique;
         font-weight: lighter;
         font-size: 2.5em;
         /*border: 2px solid red;*/
         }
+
 
 p { 
         width: auto;
@@ -157,12 +168,14 @@ p {
         text-align: justify;
         /*border: 1px solid blue;*/
         }
+        
 
  h2 {  
         font-style: italic;
         font-weight: lighter;
         font-size: 1.5em;
         }
+        
 
  h3 {
         font-style: italic;
@@ -170,6 +183,7 @@ p {
         font-size: 1.5em;
         text-align:left;
         }
+
         
  button {
         margin-top: 30px;
@@ -178,16 +192,18 @@ p {
         font-size: 1em;
         background-color: #A8E15C;
         }
+
         
-    a {
+a {
         font-size: 1em;
-      }
+    }
     
-    a:hover {
+a:hover {
             background-color: lemonchiffon; 
-        }
+    }
+
     
-    figcaption {
+figcaption {
         text-align: start;
         font-size: 1em;
         margin-top: 5px;
@@ -195,10 +211,5 @@ p {
         max-height: 30px;
         /*border: 1px solid red;*/   
         }
-
-       
-
-
-
 
  }
