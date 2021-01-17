@@ -16,10 +16,10 @@
  file: theblog.html
  file: theblog.css (configuration under 600px) Optimize for Iphone 8
  file: theblog2.css (configuratoin between 601 and 1024px) Optimize for Ipad.
- file: theblog3.css =(configuration over 1024px) Optimize for mac 13
+ file: theblog3.css(configuration over 1024px) Optimize for mac 13.
  
 
 3.- Folder for images.
 
 Note: Typography on another file was only done for the main page
-as is indicated "3 links" on the project rubric. 
+as it is required on the project rubric. 
