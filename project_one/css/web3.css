@@ -4,16 +4,16 @@
 @media (min-width:1025px) {
 
 
-    .container{
+    main{
         display: grid;
         grid-template-columns: 35% 1fr;
         grid-template-rows: 1fr minmax(700px, auto) 1fr;
         justify-content: center;
-        /*border: 2px solid red;*/
+        border: 2px solid red;
         }
-        
+       
     
-    .header{
+    header{
         display: grid;
         grid-column-start: 1;
         grid-column-end: 4;
@@ -24,7 +24,7 @@
         align-content: center;
         border-bottom: 3px solid olive;
         }
-
+    
     
     .home {
         display: flex;
@@ -47,30 +47,30 @@
         justify-content: center;
         /*border: 1px solid blue; */ 
         } 
-
-     
-    .menu {
+        #nav_bar {
+            display: flex;
+            width: auto;
+            height: auto;
+            border: 2px solid red;} 
+        
+        
+    ul {
         display: flex;
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        /*border: 2px solid red;*/
+        flex-flow: column;
+        justify-items: start;
+        width: 80px;
+        height: 80px;
+        border: 2px solid yellow; 
         }  
+        
+        
+    li {
+        font-size:1.3em;
+        border: 1px solid blue;
+        }
+    
 
-            
-    .menubox {
-        /*display: flex;*/
-        background-image: url("images/sandwich-menu-icon.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 35px;
-        height: 35px;
-        /*border: 2px solid yellow;  */
-        } 
-
-
-    .sidebar {
+    aside {
         display: grid;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -83,6 +83,7 @@
         justify-items: center;
         /*border: 1px solid black;*/
         }
+       
             
      
     #box1 {
@@ -93,7 +94,7 @@
         width: 200px;
         height: 200px;
         border-radius: 15%;  
-        background-image: url("images/snail1.jpg");
+        background-image: url("../images/caracol.jpg");
         background-size: cover;
         align-self: start;
         border: 10px solid olive;
@@ -144,7 +145,7 @@
         grid-row-end: 2;
         width: auto;
         height: auto;
-        background-image: url("images/fermented_cabbage.jpg");
+        background-image: url("../images/fermented_cabbage.jpg");
         background-size: cover;
         border-radius: 15%;  
         max-width: 400px;
@@ -158,7 +159,7 @@
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
-        background-image: url("images/little_plants.jpg");
+        background-image: url("../images/little_plants.jpg");
         background-size: cover;
         border-radius: 15%;  
         max-width: 400px;
@@ -167,7 +168,7 @@
         }  
     
   
-    .footer {
+    footer {
         display: grid;
         grid-column-start: 1;
         grid-column-end: 5;
@@ -201,7 +202,7 @@
         margin-top: 7px;
         width: 120px;
         height: 40px;
-        background-image: url("images/icon_sm.png");
+        background-image: url("../images/icon_sm.png");
         background-repeat: no-repeat;
         background-size: 100%;
         /*border: 2px solid orange; */
