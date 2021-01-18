@@ -164,7 +164,7 @@ aside {
     grid-row-end: 3;
     margin-right: 0;
     border-radius: 15%;  
-    background-image: url("../images/little_plants.jpg");
+    background-image: url("images/little_plants.jpg");
     background-size: cover;
     margin-right:5%;
     border: 4px solid olive;
@@ -192,7 +192,7 @@ footer {
 
 #contact {
     display: flex;
-    background-image: url("../images/icon_sm.png");
+    background-image: url("images/icon_sm.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 120px;
