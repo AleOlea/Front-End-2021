@@ -1,13 +1,13 @@
 # Front-End 2021
- Udacity projects
- Web blog page and blog article.
- Ale Olea 2021
+Project: Personal Blog Website <br/>
+This project requires to utilize HTML and CSS skills <br/>
+to build out a personal blog website, including custom images, layout, and styling <br/>
 
- The project is organized as follows;
+Along with webpage design considerations, the work include to appropriately structurer files <br/>
+as well as use proper CSS and HTML formatting & style.
 
- Main web page: web.hmtl <br />
- Blog: theblog.html<br />
- Folder for images.
+Author name: Alejandra aOlea <br/>
+Credits: Free images are from Unsplash.<br/>
+         My own photo.<br/>
+         My own writting. <br/>
 
-Note: Typography on another file was only done for the main page
-as it is required on the project rubric. 
