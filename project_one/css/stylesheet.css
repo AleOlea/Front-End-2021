@@ -8,16 +8,16 @@
 @media (max-width:600px) { 
 
 
-.container {
+main {
     display: grid;
     margin: 0%;
     grid-template-columns:1fr;
     grid-template-rows: 80px 115px minmax(400px, auto) 1fr;
-   /* border: 1px solid red;*/
+    border: 1px solid red;
     }
 
 
-.header {
+header {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -26,7 +26,7 @@
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: auto;
     align-content: center;
-    /*border-bottom: 2px solid olive;*/
+    border-bottom: 2px solid olive;
     }
 
 
@@ -54,28 +54,33 @@
 }
 
 
-.menu{
+#nav_bar {
     display: flex;
     width: auto;
     height: auto;
-    align-items: center;
-    justify-content: center;
-    /*border: 2px solid red;*/
-    }
+    border: 2px solid red;} 
 
-   
-.menubox {
-    /*display: flex;*/
-    background-image: url("images/sandwich-menu-icon.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-   /* border: 2px solid yellow;  */
+
+ul {
+    display: flex;
+    flex-flow: column;
+    justify-items: start;
+    width: 40px;
+    height: 50px;
+    border: 2px solid yellow; 
+    margin-right: 10px; 
     }  
 
 
-.sidebar {
+li {
+    align-items: flex-start;
+    font-size:0.9em;
+    border: 1px solid blue;
+
+    }
+
+
+aside {
     display:grid;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -94,7 +99,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;  
-    background-image: url("images/snail1.jpg");
+    background-image: url("images/caracol.jpg");
     background-size: cover;
     border-radius: 20%;
     width: 100px;
