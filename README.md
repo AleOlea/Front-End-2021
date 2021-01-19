@@ -6,8 +6,8 @@ to build out a personal blog website, including custom images, layout, and styli
 Along with webpage design considerations, the work include to appropriately structurer files <br/>
 as well as use proper CSS and HTML formatting & style.
 
-Author name: Alejandra aOlea <br/>
-Credits: Free images are from Unsplash.<br/>
-         My own photo.<br/>
-         My own writting. <br/>
+Author name: Alejandra Olea <br/>
+Credits: Images are from Unsplash (free).<br/>
+         Author photo is my own photo.<br/>
+         All writting is my own writting. <br/>
 

@@ -7,9 +7,8 @@
 main {
     display: grid;
     grid-template-columns: 30% 1fr;
-    grid-template-rows: 100px minmax(760px, auto) 1fr;
+    grid-template-rows: 100px minmax(750px, auto) 1fr;
     justify-content: center;
-    border: 2px solid red;
     }
 
 
@@ -24,7 +23,7 @@ header {
     align-content: center;
     border-bottom: 2px solid olive;
     }
-    
+
 
 .home {
     display: flex;
@@ -33,9 +32,8 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 1.7em;
-    /*border: 2px solid red;*/
     }
-   
+
     
 .title {
     display:flex;
@@ -46,34 +44,30 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /*border: 1px solid blue; */ 
     }
 
+
 #nav_bar {
-        display: flex;
-        width: auto;
-        height: auto;
-        border: 2px solid red;} 
+    display: flex;
+    width: auto;
+    height: auto;
+    } 
     
     
 ul {
-        display: flex;
-        flex-flow: column;
-        justify-items: start;
-        width: 60px;
-        height: 50px;
-        border: 2px solid yellow; 
-        
-        }  
+    display: flex;
+    flex-flow: column;
+    justify-items: start;
+    width: 60px;
+    height: 60px;
+    }  
     
     
 li {
-        align-items: flex-start;
-        font-size:1em;
-        border: 1px solid blue;
+    align-items: flex-start;
+    font-size:1em;
+    }
     
-        }
-
 
 aside {
     display: grid;
@@ -86,7 +80,6 @@ aside {
     margin: 10%;
     align-items:end;
     justify-items: center;
-   /* border: 1px solid black;*/
     }
     
 
@@ -114,7 +107,6 @@ aside {
     height: auto;
     text-align: center;
     align-self: start;
-    /*border: 1px solid pink;*/
     }
 
 
@@ -126,8 +118,7 @@ aside {
     grid-row-end: 4;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 45% 50%;
-    /*border: 1px solid red;*/
-   }
+    }
 
 
 #box4 {
@@ -137,7 +128,6 @@ aside {
     grid-row-start: 1;
     grid-row-end: 1;
     justify-items: center;
-   /* border: 1px solid green;*/
     }
 
 
@@ -164,11 +154,12 @@ aside {
     grid-row-end: 3;
     margin-right: 0;
     border-radius: 15%;  
-    background-image: url("images/little_plants.jpg");
+    background-image: url("../images/little_plants.jpg");
     background-size: cover;
     margin-right:5%;
     border: 4px solid olive;
     } 
+
 
 footer {
     display: grid;
@@ -180,6 +171,7 @@ footer {
     grid-template-rows: auto;
     border-top: 2px solid olive;
     }
+
         
 #about {
     display: flex;
@@ -187,12 +179,12 @@ footer {
     grid-column-end: 3;
     justify-content: center;
     align-content: center;
-    /*border: 2px solid black;*/
     }
+    
 
 #contact {
     display: flex;
-    background-image: url("images/icon_sm.png");
+    background-image: url("../images/icon_sm.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 120px;

@@ -33,7 +33,6 @@
         align-items: center;
         justify-content: center;
         font-size: 1.5em;
-        /*border: 2px solid red;*/
         }
 
     
@@ -45,30 +44,24 @@
         height: auto;
         align-items: center;
         justify-content: center;
-        /*border: 1px solid blue; */ 
         } 
-        #nav_bar {
-            display: flex;
-            width: auto;
-            height: auto;
-            border: 2px solid red;} 
+
+    #nav_bar {
+        display: flex;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        } 
         
         
     ul {
         display: flex;
         flex-flow: column;
-        justify-items: start;
         width: 80px;
         height: 80px;
-        border: 2px solid yellow; 
         }  
         
-        
-    li {
-        font-size:1.3em;
-        border: 1px solid blue;
-        }
-    
 
     aside {
         display: grid;
@@ -81,9 +74,8 @@
         margin: 25%;
         align-items:end;
         justify-items: center;
-        /*border: 1px solid black;*/
+
         }
-       
             
      
     #box1 {
@@ -110,7 +102,6 @@
         height: auto;
         text-align: center;
         align-self: start;
-        /*border: 1px solid pink;*/
         }
 
     
@@ -123,7 +114,6 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 40% 50%;
         text-align: center;
-        /*border: 1px solid red;*/
         }   
 
     
@@ -134,7 +124,6 @@
         grid-row-end: 1;
         align-self: center;
         margin-right: 120px;
-        /*border: 1px solid green;*/
         } 
 
         
@@ -190,7 +179,6 @@
         font-size: 1em;;
         justify-self: center;
         align-self: center;
-       /* border: 2px solid black;*/
         }
 
     
@@ -205,6 +193,6 @@
         background-image: url("../images/icon_sm.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        /*border: 2px solid orange; */
         }
+
     }

@@ -14,12 +14,12 @@ body {
     color: black;
     }
 
+
 main{
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-    grid-template-rows:  150px 1fr minmax(1000px, auto) 1fr;
+    grid-template-rows: 150px 1fr minmax(1000px, auto) 1fr;
     justify-content: center;
-    border: 2px solid red;
     }
   
    
@@ -34,6 +34,7 @@ header{
     align-content: center;
     border-bottom: 3px solid olive;
     }
+
     
 .home {
     display: flex;
@@ -42,7 +43,6 @@ header{
     font-size: 1.5em;
     align-items: center;
     justify-content: center;
-    /*border: 2px solid red;*/
     }
 
      
@@ -54,26 +54,25 @@ header{
     height: auto;
     align-items: center;
     justify-content: center;
-   /* border: 1px solid blue;  */
+ 
     }
                
 
-    #nav_bar {
-        border: 2px solid red;
-        } 
-         
-    #ul {
-        width: 50px;
-        height: 40px;
-        border: 2px solid yellow; 
-        }  
-        
-        
-    li {
-        font-size:0.9em;
-        }
-    
+#nav_bar {
+    display:flex;
+    } 
 
+
+#ul {
+    width: 70px;
+    height: 60px;
+    }  
+        
+        
+li {
+    font-size:1.2em;
+    }
+    
 
  #box1 {
     display: flex;
@@ -83,8 +82,8 @@ header{
     align-items: center; 
     justify-content: center; 
     margin: 20%;
-    /*border: 1px solid red;*/
     }
+
             
 #box2 {
     width: 100px;
@@ -96,8 +95,6 @@ header{
     border: 4px solid olive;
     }
 
-   
-
          
 .content {
     display: grid;
@@ -108,8 +105,6 @@ header{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     margin: 5%;
-   
-    /*border: 1px solid red;*/
     }
         
         
@@ -124,13 +119,14 @@ header{
     margin-top: 50px;
     width: auto;
     height: auto;
-    /*border: 2px solid yellow;*/
     }
     
+
 article {
     line-height: 2.2; 
     font-size: 1.1em;
     }
+
 
 h1 {
     font-style: oblique;
@@ -138,17 +134,20 @@ h1 {
     font-size: 2em;
     }
     
+
 h2 {
     font-style: italic;
     font-weight: lighter;
     font-size: 1.5em;
     }
+
         
 h3 {
     font-style: italic;
     font-weight: lighter;
     font-size: 1.5em;
     }
+
         
 h4 {
     font-style: italic;
@@ -168,7 +167,6 @@ p {
     justify-self:center;
     margin: 0%;
     text-align: justify;
-    /*border: 2px solid yellow;*/
     }
 
 a:hover {
@@ -192,7 +190,6 @@ footer {
    align-self: center;
    justify-self: center;
    font-size: 1.4em;
-  /* border: 2px solid black;*/
    }
 
   
@@ -204,7 +201,6 @@ footer {
   background-size: contain;
   align-self: center;
   justify-self: center;
- /* border: 2px solid orange; */
   }
   
     

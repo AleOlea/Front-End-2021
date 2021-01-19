@@ -12,7 +12,7 @@ main {
     display: grid;
     margin: 0%;
     grid-template-columns:1fr;
-    grid-template-rows: 80px 115px minmax(400px, auto) 1fr;
+    grid-template-rows: 70px 115px minmax(400px, auto) 1fr;
     }
 
 
@@ -123,7 +123,7 @@ aside {
     grid-row-start: 3;
     grid-row-end: 3;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 200px;
+    grid-template-rows: auto 150px;
     grid-gap: 1%;
     text-align: center;
     }

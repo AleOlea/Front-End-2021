@@ -17,7 +17,6 @@ main {
     margin: 0%;
     grid-template-columns: 1fr;
     grid-template-rows: 70px 1fr minmax(490px, auto) 100px;
-    border: 2px solid red;
     }
   
 
@@ -33,6 +32,7 @@ header {
     border-bottom: 2px solid olive;
     }
 
+
 .home {
     display: flex;
     width: auto;
@@ -40,12 +40,13 @@ header {
     font-size: 1.1em;
     align-items: center;
     justify-content: center;
-   /* border: 2px solid red;*/
     }
+
     
 a:hover {
     background-color: lemonchiffon; 
     }
+
   
 .title {
     display:flex;
@@ -56,18 +57,17 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-   /* border: 1px solid blue;*/
     }
 
 
 #nav_bar {
-    border: 2px solid red;
+    display:flex;
     } 
+
      
 #ul {
     width: 50px;
     height: 40px;
-    border: 2px solid yellow; 
     }  
     
     
@@ -75,17 +75,14 @@ li {
     font-size:0.9em;
     }
 
-    
-
-
 
 #box1 {
     display: flex;
     width: auto;
     height: auto;
-    border: 1px solid red;
     align-items: center; 
-    justify-content: center;  
+    justify-content: center; 
+    margin: 4%; 
     }
 
 
@@ -96,22 +93,19 @@ li {
     background-size: cover;
     border-radius: 50%;
     border: 4px solid olive;
-}
+    }
+
 
 p {
     font-weight: lighter;
-    font-style: italic;
     line-height: 1.5; 
     font-size: 0.9em;
     width: 250px;
     height: 80px;
+    margin-left:10px;
     align-self: center;
     justify-self:center;
-    margin-left:10px;
-    text-align: justify;
-    border: 2px solid yellow;
-}
-
+    }
 
 
 .content {
@@ -121,17 +115,16 @@ p {
     grid-row-end: 4;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    /*border: 1px solid black;*/
     }
+
 
 #box3 {
     display:flex;
     flex-direction: column;
     text-align: justify;
     width: auto;
-    margin: 2%;
+    margin: 4%;
     height: auto;
-   /* border: 2px solid yellow;*/
     }
 
 
@@ -142,11 +135,13 @@ article {
     margin: 2%; 
     }
 
+
 h1 {
     font-style: oblique;
     font-weight: lighter;
-    font-size: 1.6em;
+    font-size: 1.4em;
     }
+
     
 h2 {
     font-style: italic;
@@ -154,13 +149,12 @@ h2 {
     font-size: 1.2em;
     }
 
+
 h3 {
     font-style: italic;
     font-weight: lighter;
     font-size: 1.2em;
    }
-
-
 
 
 footer {
@@ -181,8 +175,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 3;
     margin-left: 20px;
-    /*border: 2px solid black;*/
     }
+
 
 #contact {
     display: flex;
