@@ -10,13 +10,18 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
+
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       <ul id="navbar__list"></ul>
     </nav>
+
+
+    
   </header>
   <main>
     <header class="main__hero">
@@ -55,6 +60,61 @@
     <p>&copy Udacity</p>
   </footer>
 
+ 
+ 
+<script>
+
+
+  
+
+const sections= document.getElementById("navbar__list");
+
+
+
+let myList= document.createElement("li");
+myList.id= "listOne";
+
+
+const myList2= document.createElement("li");
+myList2.id= "listTwo";
+
+const myList3= document.createElement("li");
+myList3.id= "listThree";
+
+const myList4= document.createElement("li");
+myList4.id= "About";
+
+
+
+
+
+myList.textContent = "Section 1";
+myList2.textContent= "Section 2"
+myList3.textContent= "Section 3"
+myList4.textContent= "About"
+
+navbar__list.append(myList, myList2, myList3, myList4);
+
+
+//event targets//
+addEventListener(click, function() {
+  alert("click")
+
+})
+
+
+
+
+</script>
+
+
+<script src="app.js" type="module"></script>
+
   
 </body>
 </html>
+
+
+
+
+
