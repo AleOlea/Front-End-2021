@@ -64,22 +64,30 @@
  
 <script>
 
-
-  
-
 const sections= document.getElementById("navbar__list");
-
 
 
 let myList= document.createElement("li");
 myList.id= "listOne";
+myList.addEventListener("click", function(){
+  alert("click")
+})
 
 
 const myList2= document.createElement("li");
 myList2.id= "listTwo";
+myList2.addEventListener("click", function(){
+  alert("pop")
+})
+
 
 const myList3= document.createElement("li");
 myList3.id= "listThree";
+myList3.addEventListener("click", function(){
+  alert("bang!")
+})
+
+
 
 const myList4= document.createElement("li");
 myList4.id= "About";
@@ -98,7 +106,7 @@ navbar__list.append(myList, myList2, myList3, myList4);
 
 //event targets//
 
-})
+
 
 
 
