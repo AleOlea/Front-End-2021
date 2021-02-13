@@ -72,19 +72,20 @@ section {
     justify-content: space-evenly;
     align-items: center;
     height: 7vh;
-    font-size: 36px;
+    font-size: 20px;
     color: rgba(0,13,60,1);
-    border-bottom: 1px solid #cc1;
+    border-bottom: 2px solid #cc1;
 }
 
 
 .navbar__menu li {
-    display: inline-block;
+    display: inline-block;/* MY COMMENT change to inline flex??/
+    
 }
 
 .navbar__menu .menu__link {
-    display: block;
-    padding: 1em;
+   /*display: block;   /*MY COMMENT ALE hide this for responsiveness of the page//
+    padding: 1em;*/
     font-weight: bold;
     text-decoration: none;
     color: #000;
