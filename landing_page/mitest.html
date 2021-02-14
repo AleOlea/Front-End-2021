@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manipulating the DOM</title>
+  <title>MYTEST</title>
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
   <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -21,9 +20,10 @@
 
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
-
       <ul id="navbar__list"></ul>
     </nav>
+
+
 
   </header>
   <main>
@@ -100,11 +100,65 @@
       </div>
     </section>
   </main>
-
   <footer class="page__footer">
     <p>&copy Udacity</p>
   </footer>
-<!--<script src="/js/app.js"></script>-->
+
+
+
+  <script>
+
+    // Define Global Variables
+
+    const navBar = document.getElementById("navbar__list");
+    const sections = document.querySelectorAll("section");
+
+    //build the nav
+
+    let myList = document.createElement("li");
+    const navItemLink=document.createElement("a"); 
+    myList.appendChild(navItemLink); //PROBLEM NOT WORKING, IS NECCESARY?
+    myList.id = "listOne";
+    myList.textContent = "Section 1";
+    myList.addEventListener("click", function () {
+    let sectionOne = document.querySelector(" #section1");
+    sectionOne.style.backgroundColor = "grey"; 
+    })
+   
+
+    const myList2 = document.createElement("li");
+    myList2.id = "listTwo";
+    myList2.textContent = "Section 2";
+    myList2.addEventListener("click", function () {
+    let sectionTwo = document.querySelector(" #section2");
+    sectionTwo.style.backgroundColor = "green";
+    })
+
+    const myList3 = document.createElement("li");
+    myList3.id = "listThree";
+    myList3.textContent = "Section 3"
+    myList3.addEventListener("click", function () {
+    let sectionThree = document.querySelector(" #section3");
+    sectionThree.style.backgroundColor = "skyblue";
+    })
+
+    const myList4 = document.createElement("li");
+    myList4.id = "sectionFour";
+    myList4.textContent = "Section 4";
+    myList4.addEventListener("click", function () {
+    let sectionFour = document.querySelector(" #section4");
+    sectionFour.style.backgroundColor = "pink";
+    })
+
+    let createSections = navBar.append(myList, myList2, myList3, myList4);
+
+
+
+  </script>
+
+
+  <!--<script src="/js/app.js"></script>-->
+
 
 </body>
 
