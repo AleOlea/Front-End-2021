@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MYTEST</title>
+  <title>MYTEST/pseduocode</title>
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
   <!-- Load Styles -->
@@ -111,8 +111,9 @@
     // Define Global Variables
 
     const navBar = document.getElementById("navbar__list");
-    const sections = document.querySelectorAll("section");
 
+    const sections = document.querySelectorAll("section");
+   
     //build the nav
 
     let myList = document.createElement("li");
@@ -123,6 +124,7 @@
     myList.addEventListener("click", function () {
     let sectionOne = document.querySelector(" #section1");
     sectionOne.style.backgroundColor = "grey"; 
+    
     })
    
 
@@ -151,6 +153,8 @@
     })
 
     let createSections = navBar.append(myList, myList2, myList3, myList4);
+    
+  
 
 
 
