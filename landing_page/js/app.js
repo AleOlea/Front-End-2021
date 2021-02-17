@@ -13,64 +13,60 @@
  */ 
 
  // Define Global Variables
-
+ //get "ul"
  const navBar = document.getElementById("navbar__list");
+ //get tag "section"
  const sections = document.getElementsByTagName("section");
+ //create 4 sections.
  let activeIndex = sections.length-1;
- let navLinks  = [];
-
-      
+ // To get the links
+ let navLinks = [];
 
 /**
  * End Global Variables
  * Start Helper Functions
- * 
 */
+
 function addNavItems (sections){
-    for(let i=0; i< sections.length; i++){
-        let section= sections[i]
+    for(let i=0; i < sections.length; i++){
+        let section = sections[i];
         let navItem = document.createElement("li");
         let navLink = document.createElement("a");
         navLink.innerText = `Section ${i+1}`;
-        /*navLink.innerText = section.getElementsByTagName("h2")[0].innerText;*/
-       /* navLink.href = `#${section.id}`;*/
         navItem.appendChild(navLink);
         navBar.appendChild(navItem);  
         navLinks.push(navLink);
     }  
 }
-
 /**
  * End Helper Functions
  * Begin Main Functions
  * 
-*/
+*/ 
+// build the nav call the function
 
-// build the nav
+addNavItems(sections);
 
-addNavItems(sections)
 // Add class 'active' to section when near top of viewport
+
 document.addEventListener("scroll", function() {
-activeIndex=sections.length-1;
- while (activeIndex >= 0 && sections[activeIndex].offsetTop > window.scrollY -100){
+    activeIndex = sections.length-1;
+    while (activeIndex >= 0 && sections[activeIndex].offsetTop > window.scrollY -100){
      for(let i=0; i < sections.length; i++){
          sections[i].style= "";  
     }
-sections[activeIndex].style= "background-color: pink"
-activeIndex -= 1;
- }
-
-   
+sections[activeIndex].style= "background-color: #fff4"
+activeIndex -= 1;//important! to avoid infinite loop
+ }  
 })
 
 // Scroll to anchor ID using scrollTO event
 for(let i= 0; i < sections.length; i++ ){
     navLinks[i].addEventListener("click", function(){
-        window.scrollTo({left: 0, top: sections[i].offsetTop, behavior: "smooth"})
+    window.scrollTo({left: 0, top: sections[i].offsetTop, behavior: "smooth"})
     });
 
 }
-
 
 /**
  * End Main Functions
@@ -79,10 +75,6 @@ for(let i= 0; i < sections.length; i++ ){
 */
 
 // Build menu 
-
-
-//ejemplo: mainHeading.appendChild(newSpanElement); clase add new page content//
-
 
 // Scroll to section on link click
 
