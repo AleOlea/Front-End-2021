@@ -1,7 +1,6 @@
 
-Project: Udacity/ Project 2.
-         Landing Page.
-Author's name.: Alejandra Olea 
+Project:  Udacity Landing Page <br />        
+Author's name.: Alejandra Olea <br />  
 
 Project description:
 This project requires to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
