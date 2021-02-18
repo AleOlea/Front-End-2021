@@ -91,6 +91,11 @@ a{
     
 }
 
+.active {
+    background-color: #fff4;
+
+}
+
 .navbar__menu .menu__link {
     display: block;   
     padding: 1em;

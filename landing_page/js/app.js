@@ -54,10 +54,10 @@ document.addEventListener("scroll", function (e) {
     activeIndex = sections.length - 1;
     while (activeIndex >= 0 && sections[activeIndex].offsetTop > window.scrollY - 100) {
         for (let i = 0; i < sections.length; i++) {
-            sections[i].style = "";
+            sections[i].classList.remove("active");
         }
-
-        sections[activeIndex].style = "background-color: #fff4"//SUGESTION and change color
+        sections[activeIndex].classList.add("active");
+       
         activeIndex -= 1;//important! to avoid infinite loop
     }
 })
