@@ -1,12 +1,13 @@
 
-Project: Landing Page.<br/>
-Author's name.: Alejandra Olea <br/>
+Project: Udacity/ Project 2.
+         Landing Page.
+Author's name.: Alejandra Olea 
 
 Project description:
 This project requires to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
 
 Objectives: 
-The project aims to give real-world scenarios of manipulating the DOM,  appending dynamically added data to the DOM, and to show how javascript can improve the usability of an otherwise static site.
+The project aims to give real-world scenarios of manipulating the DOM,  appending to it dynamically added data to show how javascript can improve the usability of an otherwise static site.
 
 Instructions:
 
