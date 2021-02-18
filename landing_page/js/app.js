@@ -57,7 +57,7 @@ document.addEventListener("scroll", function (e) {
             sections[i].classList.remove("active");
         }
         sections[activeIndex].classList.add("active");
-       
+
         activeIndex -= 1;//important! to avoid infinite loop
     }
 })
