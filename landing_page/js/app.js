@@ -61,12 +61,23 @@ activeIndex -= 1;//important! to avoid infinite loop
 })
 
 // Scroll to anchor ID using scrollTO event
-for(let i= 0; i < sections.length; i++ ){
+/*for(let i= 0; i < sections.length; i++ ){
     navLinks[i].addEventListener("click", function(){
     window.scrollTo({left: 0, top: sections[i].offsetTop, behavior: "smooth"})
     });
+} */
 
+
+
+for(let i= 0; i < sections.length; i++ ){
+    navLinks[i].addEventListener("click", function(event) {
+    window.scroll({left: 0, top: sections[i].offsetTop, behavior: "smooth"})
+    event.preventDefault();
+    });////?????
 }
+
+
+
 
 /**
  * End Main Functions
