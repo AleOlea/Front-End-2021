@@ -87,6 +87,7 @@ a{
 
 .navbar__menu li {
     display: inline-block;
+    cursor:pointer;
     
 }
 

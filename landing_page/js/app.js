@@ -57,7 +57,7 @@ document.addEventListener("scroll", function (e) {
             sections[i].style = "";
         }
 
-        sections[activeIndex].style = "background-color: #fff4"
+        sections[activeIndex].style = "background-color: #fff4"//SUGESTION and change color
         activeIndex -= 1;//important! to avoid infinite loop
     }
 })
